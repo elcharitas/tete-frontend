@@ -1,0 +1,7 @@
+# folders
+public/
+dist/
+node_modules/
+
+# files
+vite.config.ts

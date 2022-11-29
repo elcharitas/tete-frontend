@@ -1,0 +1,62 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb-typescript",
+        "airbnb/hooks",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "prettier",
+        "plugin:jsx-a11y/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "root": true,
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module",
+        "allowAutomaticSingleRunInference": true,
+        "project": ["./tsconfig.json"]
+    },
+    "plugins": ["@typescript-eslint", "prettier", "jsx-a11y"],
+    "rules": {
+        "import/prefer-default-export": "off",
+        "import/no-self-import": "off",
+        "class-methods-use-this": "off",
+        "import/no-named-as-default-member": "off",
+        "quotes": ["error", "double"],
+        "indent": ["error", 4],
+        "import/export": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/function-component-definition": "off",
+        "react/prop-types": "off",
+        "arrow-body-style": "off",
+        "no-unused-vars": "warn",
+        "@typescript-eslint/no-unsafe-assignment": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "moduleDirectory": ["node_modules", "./"]
+            }
+        }
+    },
+    "overrides": [
+        // Override some TypeScript rules just for .js files
+        {
+            "files": ["*.js"],
+            "rules": {
+                "@typescript-eslint/no-var-requires": "off"
+            }
+        }
+    ]
+}
