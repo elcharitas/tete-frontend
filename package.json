@@ -24,13 +24,10 @@
         "@mui/material": "^5.10.14",
         "@sentry/react": "^7.21.0",
         "@sentry/tracing": "^7.21.0",
-        "@supabase/auth-ui-react": "^0.2.6",
-        "@supabase/supabase-js": "^1.25.2",
         "radash": "^9.4.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-hot-toast": "^2.4.0",
-        "react-supabase": "^0.2.0",
         "react-use": "^17.4.0",
         "wouter": "^2.8.1"
     },
