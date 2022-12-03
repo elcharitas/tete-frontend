@@ -6,3 +6,8 @@ declare interface IPage {
         push(path: string): void;
     };
 }
+
+declare interface ILayout {
+    title: string;
+    children: React.ReactNode;
+}
