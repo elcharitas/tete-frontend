@@ -1,7 +1,7 @@
 import { FC, memo, ReactNode, useMemo } from "react";
 import { createTheme, ThemeProvider as MUIThemeProvider } from "@mui/material";
-import { TThemes } from "../../config/theme";
-import { useConfig } from "../../hooks/use-config";
+import { TThemes } from "/src/api/config/theme";
+import { useConfig } from "/src/api/hooks";
 import themes from "./styles";
 
 export interface IThemeProvider {

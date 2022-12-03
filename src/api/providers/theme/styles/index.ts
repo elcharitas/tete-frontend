@@ -1,4 +1,4 @@
-import { TThemes } from "src/api/config/theme";
+import { TThemes } from "/src/api/config/theme";
 import { overrides } from "../overrides";
 import { IThemeOptions } from "../types";
 import { lightTheme } from "./light";

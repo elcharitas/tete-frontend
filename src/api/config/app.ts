@@ -1,4 +1,4 @@
-import packageInfo from "../../../package.json";
+import packageInfo from "/src/../package.json";
 
 export interface IAppConfig {
     NAME: string;
