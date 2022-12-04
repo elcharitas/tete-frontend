@@ -10,7 +10,7 @@ interface ILink {
  * A wrapper around the MUI Link component that uses wouter's useLocation hook
  * to navigate to the specified path.
  */
-export const Link: FC<ILink> = ({ to, children }) => {
+const Link: FC<ILink> = ({ to, children }) => {
     const [, push] = useLocation();
     return (
         <MUILink
@@ -24,3 +24,5 @@ export const Link: FC<ILink> = ({ to, children }) => {
         </MUILink>
     );
 };
+
+export { Link };
