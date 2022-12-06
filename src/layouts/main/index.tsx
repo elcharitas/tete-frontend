@@ -6,7 +6,7 @@ import Header from "./header";
 import Footer from "./footer";
 
 const Wrapper = styled(Container)`
-    margin-top: 80px;
+    margin-top: 100px;
 `;
 
 const MainLayout: FC<ILayout> = ({ title, children }) => {

@@ -1,5 +1,5 @@
 import { ThemeOptions } from "@mui/material";
-import { teteBlueDark, teteGray, teteGrayLight } from "./colors";
+import { teteBlackLight, teteGray, teteGrayLight, teteWhite } from "./colors";
 
 export const overrides: ThemeOptions["components"] = {
     MuiTypography: {
@@ -52,11 +52,29 @@ export const overrides: ThemeOptions["components"] = {
                     variant: undefined,
                 },
                 style: {
-                    borderRadius: "12px !important",
-                    padding: "8px 20px !important",
+                    color: teteWhite,
+                    borderRadius: "2px !important",
+                    padding: "8px 20px",
+                    margin: "0px 5px",
                     "&.active": {
-                        backgroundColor: teteBlueDark,
+                        borderBottom: `2px solid ${teteWhite}`,
                     },
+                    "&:hover": {
+                        backgroundColor: teteBlackLight,
+                        borderBottom: `2px solid ${teteWhite}`,
+                    },
+                },
+            },
+            {
+                props: {
+                    variant: "outlined",
+                },
+                style: {
+                    color: teteWhite,
+                    borderRadius: "2px !important",
+                    padding: "8px 20px",
+                    margin: "0px 5px",
+                    border: `2px solid ${teteWhite}`,
                 },
             },
         ],
