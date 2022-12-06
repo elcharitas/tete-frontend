@@ -6,7 +6,7 @@ import { VitePWA } from "vite-plugin-pwa";
 import MANIFEST from "./src/api/config/manifest";
 
 export default defineConfig({
-    plugins: [svgr(), react(), VitePWA(MANIFEST)],
+    plugins: [svgr({ exportAsDefault: true }), react(), VitePWA(MANIFEST)],
     test: {
         api: true,
         silent: true,
