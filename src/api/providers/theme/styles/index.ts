@@ -9,7 +9,7 @@ const themes: Record<TThemes, IThemeOptions> = {
         components: overrides,
     },
     dark: {
-        palette: {},
+        palette: lightTheme,
         components: overrides,
     },
 };

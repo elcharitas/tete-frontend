@@ -1,5 +1,9 @@
 import { FC, memo, ReactNode, useMemo } from "react";
-import { createTheme, ThemeProvider as MUIThemeProvider } from "@mui/material";
+import {
+    createTheme,
+    CssBaseline,
+    ThemeProvider as MUIThemeProvider,
+} from "@mui/material";
 import { TThemes } from "/src/api/config/theme";
 import { useConfig } from "/src/api/hooks";
 import themes from "./styles";
@@ -12,7 +16,12 @@ const ThemeProvider: FC<IThemeProvider> = ({ children }) => {
     const theme = useMemo(() => createTheme(themes[themeName as TThemes]), [
         themeName,
     ]);
-    return <MUIThemeProvider theme={theme}>{children}</MUIThemeProvider>;
+    return (
+        <MUIThemeProvider theme={theme}>
+            <CssBaseline />
+            {children}
+        </MUIThemeProvider>
+    );
 };
 
 export default memo(ThemeProvider);

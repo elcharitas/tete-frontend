@@ -1,21 +1,18 @@
-import { Container } from "@mui/system";
 import { FC } from "react";
 import MainLayout from "/src/layouts/main";
-import {useStyle } from '../components/styles/homeStyles'
-import { Box, Typography } from "@mui/material";
-import FeaturedGames from "../containers/featuredGames";
-import LiveBetting from "../containers/liveBetting";
-import Highlight from "../containers/highlight";
 
+import Timeline from "../containers/timeline";
+import FeaturedGames from "../containers/featuredGames";
 
 const HomePage: FC<IPage> = () => {
-const classes  = useStyle()
+    return (
+        <MainLayout title="Home">
+            <FeaturedGames />
+            <Timeline title="Live Betting" />
+            <Timeline title="Highlights" />
+        </MainLayout>
+    );
 
-    return <MainLayout title="Home">
-        <FeaturedGames/>
-        <LiveBetting/>
-        <Highlight/>
-    </MainLayout>;
 };
 
 export default HomePage;

@@ -3,9 +3,9 @@ export const teteGreenDark = "#27AE60";
 export const teteGreenLight = "#58D68D";
 export const teteGreenLighter = "#ABEBC6";
 
-export const teteBlue = "#3498DB";
-export const teteBlueDark = "#2980B9";
-export const teteBlueLight = "#5DADE2";
+export const teteBlue = "#0E2EA0";
+export const teteBlueDark = "#2A3149";
+export const teteBlueLight = "#5FAFFF";
 export const teteBlueLighter = "#AED6F1";
 
 export const teteYellow = "#F1C40F";
