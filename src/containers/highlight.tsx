@@ -1,24 +1,25 @@
-import { Divider, Typography } from '@mui/material'
-import { Box } from '@mui/system'
-import React from 'react'
-import England from '../components/gamesHighlights/England'
-import LiveHighlight from '../components/gamesHighlights/liveHighlight'
-import Spain from '../components/gamesHighlights/Spain'
-import { useStyle } from '../components/styles/homeStyles'
-
+import { Box, Divider, Typography } from "@mui/material";
+import { League } from "../components/widgets";
 
 const Highlight = () => {
-    const classes = useStyle()
-  return (
-    <Box className={classes.highlights}>
-        <Typography sx={{m:2, fontSize:'31px', fontWeight:'400px'}}>Highlights</Typography>
-        <Divider/>
-        <LiveHighlight />
-        <LiveHighlight/>
-        <England />
-        <Spain />
-    </Box>
-  )
-}
+    return (
+        <Box
+            sx={{
+                background: "#E5E5E5",
+                width: "949px",
+                marginTop: "20px",
+                padding: "15px",
+            }}
+        >
+            <Typography sx={{ m: 2, fontSize: "31px", fontWeight: "400px" }}>
+                Highlights
+            </Typography>
+            <Divider />
+            <League title="Premier League" />
+            <League title="La Liga" />
+            <League title="Serie A" />
+        </Box>
+    );
+};
 
-export default Highlight
+export default Highlight;
