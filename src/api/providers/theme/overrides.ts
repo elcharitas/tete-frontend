@@ -1,6 +1,7 @@
 import { ThemeOptions } from "@mui/material";
 import {
     teteBlackLight,
+    teteBlue,
     teteGray,
     teteGrayLight,
     teteWhite,
@@ -88,6 +89,18 @@ export const overrides: ThemeOptions["components"] = {
                     padding: "8px 20px",
                     margin: "0px 5px",
                     border: `2px solid ${teteWhite}`,
+                },
+            },
+            {
+                props: {
+                    variant: "contained",
+                },
+                style: {
+                    color: teteWhite,
+                    borderRadius: "2px !important",
+                    padding: "6px 12px",
+                    margin: "0px 5px",
+                    backgroundColor: teteBlue,
                 },
             },
         ],

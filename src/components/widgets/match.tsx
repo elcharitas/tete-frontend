@@ -34,9 +34,9 @@ const Match = () => {
                     fontSize: "10px",
                 }}
             >
-                <Button>1</Button>
-                <Button>2</Button>
-                <Button>3</Button>
+                <Button variant="contained">1</Button>
+                <Button variant="contained">2</Button>
+                <Button variant="contained">3</Button>
             </Box>
         </Box>
     );
