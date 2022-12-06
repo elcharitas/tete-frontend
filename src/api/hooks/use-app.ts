@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { useLocalStorage } from "react-use";
+import { Logger } from "../utils/logging";
 import { useConfig } from "./use-config";
 
 const INITIAL_APP_STORE: IAppStore = {
@@ -18,22 +19,26 @@ const useApp = () => {
 
     const dispatch = useCallback(
         (path: string, value: unknown) => {
-            const newApp: Record<string, any> = { ...app };
+            const newApp: Partial<IAppStore> = { ...app };
             const paths = path.split(".");
 
             paths.reduce((prev, next, index) => {
                 const isLastIndex = index === paths.length - 1;
-                const isValidKey = prev.hasOwnProperty(next);
+                const isValidKey = Object.keys(prev).includes(next);
                 if (isLastIndex && isValidKey) {
+                    if (typeof value !== typeof prev[next]) {
+                        Logger.error("useApp::dispatch: value type mismatch");
+                        return prev[next] as IAppStore;
+                    }
+                    // eslint-disable-next-line no-param-reassign
                     prev[next] = value;
-                } else if (isValidKey) {
-                    prev[next] = { ...prev[next] };
                 }
-                return prev[next];
+                return prev[next] as IAppStore;
             }, newApp);
 
             setApp(newApp as IAppStore);
         },
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         [app]
     );
 

@@ -35,6 +35,8 @@
         "quotes": ["error", "double"],
         "indent": ["error", 4],
         "import/export": "off",
+        "import/extensions": "off",
+        "import/no-absolute-path": "off",
         "react/react-in-jsx-scope": "off",
         "react/jsx-props-no-spreading": "off",
         "react/function-component-definition": "off",

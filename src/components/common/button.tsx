@@ -28,4 +28,8 @@ const Button: FC<IButton> = ({
     </MUIButton>
 );
 
+Button.defaultProps = {
+    isLoading: false,
+};
+
 export { Button };

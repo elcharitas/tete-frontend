@@ -60,4 +60,8 @@ const Header: FC<IHeader> = ({ onOpenSidebar }) => {
     );
 };
 
+Header.defaultProps = {
+    onOpenSidebar: () => {},
+};
+
 export default Header;
