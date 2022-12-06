@@ -1,7 +1,20 @@
 import { ThemeOptions } from "@mui/material";
-import { teteBlackLight, teteGray, teteGrayLight, teteWhite } from "./colors";
+import {
+    teteBlackLight,
+    teteGray,
+    teteGrayLight,
+    teteWhite,
+    teteWhiteDark,
+} from "./colors";
 
 export const overrides: ThemeOptions["components"] = {
+    MuiCssBaseline: {
+        styleOverrides: {
+            body: {
+                backgroundColor: teteWhiteDark,
+            },
+        },
+    },
     MuiTypography: {
         variants: [
             {
