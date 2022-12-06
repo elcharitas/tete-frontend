@@ -2,6 +2,7 @@
 
 declare module "*.svg" {
     import { FC } from "react";
+
     type SVGProps = HTMLElement & { height: string; width: string };
     const ReactComponent: FC<Partial<SVGProps>>;
     export { ReactComponent };
@@ -20,6 +21,7 @@ declare interface ILayout {
 }
 
 declare interface IAppStore {
+    [key: string]: unknown;
     page: {
         last: string | null;
         visited: number | null;

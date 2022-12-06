@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-return, @typescript-eslint/no-explicit-any */
+
 type TRecord = Record<string, any>;
 type TPickArrayData<
     D extends TRecord,

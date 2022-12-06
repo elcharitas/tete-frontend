@@ -1,4 +1,5 @@
-import { VitePWAOptions } from "vite-plugin-pwa";
+// eslint-disable-next-line  import/no-extraneous-dependencies
+import { type VitePWAOptions } from "vite-plugin-pwa";
 import APP from "./app";
 import THEME from "./theme";
 
