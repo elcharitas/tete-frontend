@@ -1,7 +1,21 @@
 import { ThemeOptions } from "@mui/material";
-import { teteBlueDark, teteGray, teteGrayLight } from "./colors";
+import {
+    teteBlackLight,
+    teteBlue,
+    teteGray,
+    teteGrayLight,
+    teteWhite,
+    teteWhiteDark,
+} from "./colors";
 
 export const overrides: ThemeOptions["components"] = {
+    MuiCssBaseline: {
+        styleOverrides: {
+            body: {
+                backgroundColor: teteWhiteDark,
+            },
+        },
+    },
     MuiTypography: {
         variants: [
             {
@@ -52,11 +66,41 @@ export const overrides: ThemeOptions["components"] = {
                     variant: undefined,
                 },
                 style: {
-                    borderRadius: "12px !important",
-                    padding: "8px 20px !important",
+                    color: teteWhite,
+                    borderRadius: "2px !important",
+                    padding: "8px 20px",
+                    margin: "0px 5px",
                     "&.active": {
-                        backgroundColor: teteBlueDark,
+                        borderBottom: `2px solid ${teteWhite}`,
                     },
+                    "&:hover": {
+                        backgroundColor: teteBlackLight,
+                        borderBottom: `2px solid ${teteWhite}`,
+                    },
+                },
+            },
+            {
+                props: {
+                    variant: "outlined",
+                },
+                style: {
+                    color: teteWhite,
+                    borderRadius: "2px !important",
+                    padding: "8px 20px",
+                    margin: "0px 5px",
+                    border: `2px solid ${teteWhite}`,
+                },
+            },
+            {
+                props: {
+                    variant: "contained",
+                },
+                style: {
+                    color: teteWhite,
+                    borderRadius: "2px !important",
+                    padding: "6px 12px",
+                    margin: "0px 5px",
+                    backgroundColor: teteBlue,
                 },
             },
         ],
