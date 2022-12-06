@@ -1,8 +1,8 @@
 import { FC, ReactNode } from "react";
-import { Link as MUILink, Stack, Typography } from "@mui/material";
+import { Link as MUILink, LinkProps, Stack, Typography } from "@mui/material";
 import useLocation from "wouter/use-location";
 
-interface ILink {
+interface ILink extends LinkProps {
     href: string;
     icon?: ReactNode;
     label?: ReactNode;
@@ -12,7 +12,7 @@ interface ILink {
  * A wrapper around the MUI Link component that uses wouter's useLocation hook
  * to navigate to the specified path.
  */
-const Link: FC<ILink> = ({ href, icon, label, children }) => {
+const Link: FC<ILink> = ({ href, icon, label, children, ...props }) => {
     const [, push] = useLocation();
     return (
         <MUILink
@@ -21,6 +21,7 @@ const Link: FC<ILink> = ({ href, icon, label, children }) => {
                 e.preventDefault();
                 push(href);
             }}
+            {...props}
         >
             <Stack direction="row" alignItems="center">
                 {icon}
