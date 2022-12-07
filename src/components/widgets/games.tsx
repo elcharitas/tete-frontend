@@ -1,7 +1,7 @@
-import { StackedLineChart } from '@mui/icons-material'
+// import { StackedLineChart } from '@mui/icons-material'
 import { Box } from '@mui/system'
 import React from 'react'
-import { useStyle } from '../components/styles/homeStyles'
+import { useStyle } from '../styles/homeStyles'
 
 const Games = () => {
     const classes = useStyle()

@@ -1,5 +1,6 @@
 import { makeStyles } from "@mui/styles";
 import { createTheme } from "@mui/system";
+import { teteBlue, teteGray, teteRed } from "/src/api/providers/theme/colors";
 
 const theme = createTheme({});
 
@@ -77,6 +78,18 @@ const useStyle = makeStyles((theme) => {
       // height:'300px',
       marginTop:'20px',
       padding:'15px'
+    },
+    running:{
+      background:teteGray,
+    },
+    lost:{
+      background:teteRed
+    },
+    won:{
+      background:teteBlue
+    },
+    paper:{
+      border:'none'
     }
   };
 });

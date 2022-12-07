@@ -7,7 +7,7 @@ import FeaturedGames from "../containers/featuredGames";
 const HomePage: FC<IPage> = () => {
     return (
         <MainLayout title="Home">
-            <FeaturedGames />
+            <FeaturedGames title = "Featured Games"/>
             <Timeline title="Live Betting" />
             <Timeline title="Highlights" />
         </MainLayout>
