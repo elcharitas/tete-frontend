@@ -32,7 +32,6 @@
         "react-dom": "^18.2.0",
         "react-hot-toast": "^2.4.0",
         "react-use": "^17.4.0",
-        "styled-components": "^5.3.6",
         "wagmi": "^0.8.7",
         "wouter": "^2.8.1"
     },
