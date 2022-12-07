@@ -5,7 +5,7 @@ export const lightTheme: TThemePalette = {
     mode: "light",
     primary: {
         main: teteBlue,
-        dark: teteBlackDark,
+        dark: teteBlueDark,
         light: teteBlueLight,
     },
 };
