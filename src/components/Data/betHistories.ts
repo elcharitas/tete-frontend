@@ -1,0 +1,81 @@
+const bets = [
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Running",
+  },
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Won",
+  },
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Lost",
+  },
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Running",
+  },
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Running",
+  },
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Lost",
+  },
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Won",
+  },
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Won",
+  },
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Running",
+  },
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Running",
+  },
+  {
+    date: "31/11/22",
+    game: "Chelsea vs Man United",
+    stake: "$200",
+    potentialWinnings: "$1500",
+    status: "Lost",
+  },
+];
+
+export { bets };

@@ -21,6 +21,7 @@
         "@emotion/react": "^11.10.5",
         "@emotion/styled": "^11.10.5",
         "@mui/icons-material": "^5.10.14",
+        "@mui/lab": "5.0.0-alpha.111",
         "@mui/material": "^5.10.14",
         "@rainbow-me/rainbowkit": "^0.8.0",
         "@sentry/react": "^7.21.0",
@@ -31,6 +32,7 @@
         "react-dom": "^18.2.0",
         "react-hot-toast": "^2.4.0",
         "react-use": "^17.4.0",
+        "styled-components": "^5.3.6",
         "wagmi": "^0.8.7",
         "wouter": "^2.8.1"
     },
