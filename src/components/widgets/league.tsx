@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { ArrowDownward, StackedBarChart } from "@mui/icons-material";
-import { Accordion, Box, Typography } from "@mui/material";
+import { ArrowDownward } from "@mui/icons-material";
+import { Box, Typography } from "@mui/material";
 import { Match } from "./match";
 
 interface ILeague {
