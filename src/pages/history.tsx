@@ -1,4 +1,6 @@
+import { ArrowLeft, ArrowRight } from "@mui/icons-material";
 import { Box, Divider, Typography } from "@mui/material";
+import { teteBlue } from "../api/providers/theme/colors";
 import LabTabs from "../components/widgets/tabs";
 import MainLayout from "../layouts/main";
 
@@ -18,6 +20,17 @@ const History = () => {
                 <Divider />
                 <Box>
                     <LabTabs />
+                </Box>
+                {/* <Divider /> */}
+                <Box sx={{display:'flex', justifyContent:'space-between'}}>
+                    <Box sx={{display:'flex', alignItems:"center", cursor:'pointer', color:teteBlue}}>
+                        <ArrowLeft/>
+                        <span>Previous</span>
+                    </Box>
+                    <Box sx={{display:'flex', alignItems:"center", cursor:'pointer', color:teteBlue}}>
+                        <span>Next</span>
+                        <ArrowRight />
+                    </Box>
                 </Box>
             </Box>
         </MainLayout>

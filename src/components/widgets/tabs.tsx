@@ -59,6 +59,8 @@ export default function LabTabs() {
                                         color: "common.white",
                                         width: "100px",
                                         margin: " auto 0",
+                                        bgcolor: `${bet.status === "Lost" ? (teteRed) : (teteBlue)}`,
+                                        background:`${bet.status === 'Running' ? (teteGray) : (null)}`
                                     }}
                                 >
                                     {bet.status}
