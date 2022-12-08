@@ -1,8 +1,8 @@
+import { ArrowLeft, ArrowRight } from '@mui/icons-material'
 import { Divider, Typography } from '@mui/material'
 import { Box } from '@mui/system'
-import SimpleAccordion from '../components/common/accordion'
-import LabTabs from '../components/common/tabs'
-import Toggle from '../components/common/toggle'
+import { teteBlue } from '../api/providers/theme/colors'
+import LabTabs from '../components/widgets/tabs'
 import MainLayout from '../layouts/main'
 
 const History = () => {
@@ -21,6 +21,16 @@ const History = () => {
             <Divider />
             <Box >
                 <LabTabs />
+            </Box>
+            <Box sx={{display:'flex', justifyContent:'space-between'}}>
+                <Box sx={{display:'flex', alignItems:'center', color:teteBlue, cursor:'pointer'}}>
+                    <ArrowLeft/>
+                    <span>Previous</span>
+                </Box>
+                <Box sx={{display:'flex', alignItems:'center', color:teteBlue, cursor:'pointer'}}>
+                    <span>Next</span>
+                    <ArrowRight/>
+                </Box>
             </Box>
         </Box>
     </MainLayout>
