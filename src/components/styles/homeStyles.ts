@@ -1,13 +1,13 @@
 import { makeStyles } from "@mui/styles";
 import { createTheme } from "@mui/system";
-import { teteBlue, teteGray, teteRed } from "/src/api/providers/theme/colors";
+import { teteBlue, teteGray, teteGrayLight, teteRed, teteWhite } from "/src/api/providers/theme/colors";
 
 const theme = createTheme({});
 
 const useStyle = makeStyles((theme) => {
   return {
     featuredGames: {
-      background: "#E5E5E5",
+      background: teteWhite,
       width: "949px",
       height:'240px',
       borderRadius: "10px 10px 0 0 ",
@@ -26,7 +26,8 @@ const useStyle = makeStyles((theme) => {
       width:'200px',
       height:'150px',
       borderRadius:'8px',
-      padding:'5px'
+      padding:'5px',
+      boxShadow:`1px 2px 4px 5px  ${teteGrayLight}`
     },
     match:{
       display:'flex',
