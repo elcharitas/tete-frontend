@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Box, Divider, Typography } from "@mui/material";
 import { League } from "../components/widgets";
+import { teteWhite } from "../api/providers/theme/colors";
 
 interface ITimeline {
     title: string;
@@ -11,7 +12,7 @@ const Timeline: FC<ITimeline> = ({ title, showSearch, timelines }) => {
     return (
         <Box
             sx={{
-                background: "#E5E5E5",
+                background: teteWhite,
                 width: "949px",
                 padding: "15px",
                 my: 12,
