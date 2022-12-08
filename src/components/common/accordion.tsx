@@ -1,4 +1,3 @@
-
 import {
     Accordion,
     AccordionSummary,
@@ -25,4 +24,3 @@ const SimpleAccordion = () => {
 };
 
 export { SimpleAccordion };
-

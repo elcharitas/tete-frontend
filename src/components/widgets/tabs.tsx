@@ -53,22 +53,13 @@ export default function LabTabs() {
                                     </Typography>
                                 </div>
                                 <Typography
-                                    sx={bet.status === "Running"?{
+                                    sx={{
                                         border: "2px solid",
                                         textAlign: "center",
                                         color: "common.white",
                                         width: "100px",
                                         margin: " auto 0",
-                                        bgcolor:teteGrayLight
-                                    }: {
-                                        border: "2px solid",
-                                        textAlign: "center",
-                                        color: "common.white",
-                                        width: "100px",
-                                        margin: " auto 0",
-                                        bgcolor:teteBlue
-                                    }
-                                    }
+                                    }}
                                 >
                                     {bet.status}
                                 </Typography>

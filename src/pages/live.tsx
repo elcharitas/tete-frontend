@@ -11,4 +11,3 @@ const LiveBetting: FC<IPage> = () => {
 };
 
 export default LiveBetting;
-

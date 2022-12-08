@@ -14,4 +14,3 @@ const Toggle: FC = () => {
 };
 
 export { Toggle };
-
