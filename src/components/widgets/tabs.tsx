@@ -58,6 +58,10 @@ export default function LabTabs() {
                                         color: "common.white",
                                         width: "100px",
                                         margin: " auto 0",
+                                        bgcolor:
+                                            bet.status === "Running"
+                                                ? "secondary.main"
+                                                : "error.main",
                                     }}
                                 >
                                     {bet.status}
@@ -68,7 +72,57 @@ export default function LabTabs() {
                     ))}
                 </TabPanel>
                 <TabPanel value="2">No Bets Available</TabPanel>
-                <TabPanel value="3">No Bets Available</TabPanel>
+                <TabPanel value="3">
+                    {bets.map((bet) => {
+                        if (bet.status === "Running") {
+                            return (
+                                <>
+                                    <Box
+                                        sx={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                        }}
+                                    >
+                                        <div>
+                                            <Typography>Date</Typography>
+                                            <Typography>{bet.date}</Typography>
+                                        </div>
+                                        <div>
+                                            <Typography>Game</Typography>
+                                            <Typography>{bet.game}</Typography>
+                                        </div>
+                                        <div>
+                                            <Typography>Total Stake</Typography>
+                                            <Typography>{bet.stake}</Typography>
+                                        </div>
+                                        <div>
+                                            <Typography>
+                                                Potential Winnings
+                                            </Typography>
+                                            <Typography>
+                                                {bet.potentialWinnings}
+                                            </Typography>
+                                        </div>
+                                        <Typography
+                                            sx={{
+                                                border: "2px solid",
+                                                textAlign: "center",
+                                                color: "common.white",
+                                                width: "100px",
+                                                margin: " auto 0",
+                                                background: "secondary.main",
+                                            }}
+                                        >
+                                            {bet.status}
+                                        </Typography>
+                                    </Box>
+                                    <Divider />
+                                </>
+                            );
+                        }
+                        return null;
+                    })}
+                </TabPanel>
             </TabContext>
         </Box>
     );
