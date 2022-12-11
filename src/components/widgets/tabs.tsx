@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { Box, Tab, Divider, Typography } from "@mui/material";
 import { bets } from "/src/api/data/bet-history";
-import { teteBlue, teteGray, teteRed, teteWhite } from "/src/api/providers/theme/colors";
+// import { teteBlue, teteGray, teteRed, teteWhite } from "/src/api/providers/theme/colors";
 
 export default function LabTabs() {
     const [value, setValue] = useState("1");
@@ -63,6 +63,10 @@ export default function LabTabs() {
                                             bet.status === "Running"
                                                 ? "secondary.main"
                                                 : "error.main",
+                                        background:
+                                            bet.status === "Won" 
+                                                ? "secondary.main" 
+                                                :"error.main"        
                                     }}
                                 >
                                     {bet.status}
@@ -111,7 +115,7 @@ export default function LabTabs() {
                                                 color: "common.white",
                                                 width: "100px",
                                                 margin: " auto 0",
-                                                background: "secondary.main",
+                                                background: "error.main",
                                             }}
                                         >
                                             {bet.status}
