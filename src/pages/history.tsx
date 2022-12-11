@@ -21,13 +21,13 @@ const History = () => {
                 <Box>
                     <LabTabs />
                 </Box>
-                <Box sx={{display:'flex', justifyContent:'space-between'}}>
-                    <Box sx={{display:'flex', alignItems:'center', color:teteBlue
-                    , cursor:'pointer'}}>
+                <Box sx={{display:"flex", justifyContent:"space-between"}}>
+                    <Box sx={{display:"flex", alignItems:"center", color:teteBlue
+                        , cursor:"pointer"}}>
                         <ArrowLeft/>
                         <span>Previous</span>
                     </Box>
-                    <Box sx={{display:'flex', alignItems:'center', color:teteBlue, cursor:'pointer'}}>
+                    <Box sx={{display:"flex", alignItems:"center", color:teteBlue, cursor:"pointer"}}>
                         <span>Next</span>
                         <ArrowRight/>
                     </Box>

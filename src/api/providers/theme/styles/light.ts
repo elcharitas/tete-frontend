@@ -1,4 +1,12 @@
-import { teteBlueDark, teteBlue, teteBlueLight, teteWhite } from "../colors";
+import {
+    teteBlueDark,
+    teteBlue,
+    teteRed,
+    teteBlueLight,
+    teteWhite,
+    teteBlack,
+    teteGray,
+} from "../colors";
 import { TThemePalette } from "../types";
 
 export const lightTheme: TThemePalette = {
@@ -10,5 +18,12 @@ export const lightTheme: TThemePalette = {
     },
     common: {
         white: teteWhite,
+        black: teteBlack,
+    },
+    secondary: {
+        main: teteGray,
+    },
+    error: {
+        main: teteRed,
     },
 };
