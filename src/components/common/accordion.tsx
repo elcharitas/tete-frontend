@@ -1,26 +1,30 @@
 import {
-    Accordion,
-    AccordionSummary,
-    AccordionDetails,
-    Typography,
+	Accordion,
+	AccordionSummary,
+	AccordionDetails,
+	Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const SimpleAccordion = () => {
-    return (
-        <Accordion>
-            <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-            >
-                <Typography>Date</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-                <Typography>31/1/22</Typography>
-            </AccordionDetails>
-        </Accordion>
-    );
+type accordProps = {
+	title: string;
+};
+
+const SimpleAccordion = ({ title }: accordProps) => {
+	return (
+		<Accordion>
+			<AccordionSummary
+				expandIcon={<ExpandMoreIcon />}
+				aria-controls="panel1a-content"
+				id="panel1a-header"
+			>
+				<Typography>{title}</Typography>
+			</AccordionSummary>
+			<AccordionDetails>
+				<Typography>null</Typography>
+			</AccordionDetails>
+		</Accordion>
+	);
 };
 
 export { SimpleAccordion };
