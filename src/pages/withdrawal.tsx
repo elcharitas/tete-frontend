@@ -11,9 +11,9 @@ const Withdrawal = () => {
 			<Box
 				sx={{
 					background: teteWhite,
-					width: "625px",
+					width: "800px",
 					padding: "15px",
-					my: 12,
+					my: 1,
 					height: "324px",
 				}}
 			>
@@ -38,15 +38,15 @@ const Withdrawal = () => {
 						Amount:
 					</Typography>
 					<TextField
-						sx={{ width: "300px" }}
 						value={amount}
 						onChange={(e) => setAmount(e.target.value)}
 						label="USDT"
+						fullWidth
 					/>
 				</Box>
 				<Box sx={{ textAlign: "center", my: 10 }}>
 					{amount === "" ? null : (
-						<Button variant="contained" sx={{ width: "30%" }}>
+						<Button variant="contained" sx={{ width: "50%" }}>
 							Withdral
 						</Button>
 					)}

@@ -15,7 +15,7 @@ const Timeline: FC<ITimeline> = ({ title, showSearch, timelines }) => {
 				background: teteWhite,
 				width: "700px",
 				padding: "15px",
-				my: 12,
+				my: 2,
 			}}
 		>
 			<Typography variant="h6" sx={{ m: 2 }}>

@@ -1,18 +1,24 @@
 import { Box } from "@mui/material";
+import { useLocation } from "react-use";
+import BetSliptabs from "./betSliptabs";
 
 const DrawerRight = () => {
+	const location = useLocation();
 	return (
 		<Box
-			sx={{
-				background: "white",
-				height: "200px",
-				width: "200px",
-				borderRadius: "5px",
-				m: 2,
-				p: 3,
-			}}
+			sx={
+				location.pathname === "/live" || location.pathname === "/"
+					? {
+							background: "#2A3149",
+							width: "300px",
+							borderRadius: "5px",
+							m: 2,
+							p: 1,
+					  }
+					: { display: "none" }
+			}
 		>
-			Home
+			<BetSliptabs />
 		</Box>
 	);
 };
