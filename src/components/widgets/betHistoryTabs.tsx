@@ -53,10 +53,14 @@ export default function LabTabs() {
 										color: "common.white",
 										width: "100px",
 										margin: " auto 0",
-										bgcolor:
-											bet.status === "Running"
+										backgroundColor:
+											bet.status === "Won"
+												? "primary.main"
+												: null || bet.status === "Running"
 												? "secondary.main"
-												: "error.main",
+												: null || bet.status === "Lost"
+												? "error.main"
+												: null,
 									}}
 								>
 									{bet.status}
@@ -101,7 +105,7 @@ export default function LabTabs() {
 												color: "common.white",
 												width: "100px",
 												margin: " auto 0",
-												background: "secondary.main",
+												bgcolor: "secondary.main",
 											}}
 										>
 											{bet.status}

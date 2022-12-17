@@ -8,7 +8,8 @@ import Footer from "./footer";
 const Wrapper = styled(Container)`
 	margin-top: 100px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	width: 100%;
 `;
 
 const MainLayout: FC<ILayout> = ({ title, children }) => {

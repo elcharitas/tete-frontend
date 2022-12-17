@@ -10,7 +10,7 @@ const DrawerRight = () => {
 				location.pathname === "/live" || location.pathname === "/"
 					? {
 							background: "#2A3149",
-							width: "300px",
+							width: "290px",
 							borderRadius: "5px",
 							m: 2,
 							p: 1,
