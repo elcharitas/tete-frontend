@@ -20,6 +20,7 @@
     "dependencies": {
         "@emotion/react": "^11.10.5",
         "@emotion/styled": "^11.10.5",
+        "@microsoft/eslint-formatter-sarif": "2.1.7",
         "@mui/icons-material": "^5.10.14",
         "@mui/lab": "5.0.0-alpha.111",
         "@mui/material": "^5.10.14",
@@ -51,7 +52,7 @@
         "@vitest/coverage-c8": "^0.25.3",
         "@vitest/ui": "^0.25.3",
         "babel-plugin-react-require": "^3.1.3",
-        "eslint": "^8.27.0",
+        "eslint": "8.10.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
         "eslint-config-prettier": "^8.5.0",
