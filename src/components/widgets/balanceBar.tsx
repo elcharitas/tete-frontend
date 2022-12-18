@@ -3,7 +3,6 @@ import { useLocation } from "react-use";
 import PostAccordion from "../common/postAccordion";
 
 const BalanceBar = () => {
-	const location = useLocation();
 	return (
 		<Box
 			sx={{
