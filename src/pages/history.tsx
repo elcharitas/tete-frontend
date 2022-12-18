@@ -10,7 +10,7 @@ const History = () => {
 			<Box
 				sx={{
 					background: teteWhite,
-					width: "800px",
+					width: "801px",
 					padding: "5px",
 					my: 1,
 				}}
