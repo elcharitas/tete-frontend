@@ -5,20 +5,29 @@ import {
 	Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useLocation } from "react-use";
 
 type accordProps = {
 	title: string;
+	path: string;
 };
 
-const SimpleAccordion = ({ title }: accordProps) => {
+const PostAccordion = ({ title, path }: accordProps) => {
+	const location = useLocation();
 	return (
-		<Accordion>
+		<Accordion
+			sx={
+				location.pathname === path
+					? { background: "#0E2EA0", color: "white" }
+					: { background: "initial" }
+			}
+		>
 			<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"
 				id="panel1a-header"
 			>
-				<Typography>{title}</Typography>
+				<Typography onClick={() => {}}>{title}</Typography>
 			</AccordionSummary>
 			<AccordionDetails>
 				<Typography>null</Typography>
@@ -27,4 +36,4 @@ const SimpleAccordion = ({ title }: accordProps) => {
 	);
 };
 
-export { SimpleAccordion };
+export default PostAccordion;
